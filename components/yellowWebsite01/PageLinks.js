@@ -27,7 +27,7 @@ const links = [
 
 function PageLinks() {
   return (
-    <div className="md:w-2/5 sm:w-3/5 mt-8">
+    <div className="w-5/6 lg:w-1/3 md:w-2/5 mt-8">
       <div className="grid grid-cols-2 grid-rows-2  gap-2">
         {
           links.map(item => {

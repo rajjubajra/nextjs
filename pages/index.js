@@ -5,7 +5,7 @@ import CopyRightFooter from '../components/CopyRightFooter.js/CopyRightFooter';
 
 export default function Home() {
   return (
-    <div className="container px-10">
+    <div className="container mx-auto px-10">
       <Head>
         <title>Web Designer</title>
         <link rel="icon" href="/favicon.ico" />

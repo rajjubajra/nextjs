@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function PageContent() {
   return (
-    <div className="lg:w-2/5 md:w-full sm:w-full">
+    <div className="w-full xl:w-1/3 lg:w-1/2 md:w-3/5 lg:py-5">
       <div className="md:grid md:grid-flow-col">
         <div className="flex justify-center md:border-r">
           <div className="sm:mb-4">
@@ -14,10 +14,15 @@ function PageContent() {
           </div>
         </div>
 
-        <div className="md:col-start-2 md:pl-8 md:mt-8 
-        sm:flex sm:justify-center sm:flex-col">
-          <h1 className="text-5xl tracking-tighter sm:text-center">Yellow-Website</h1>
-          <div className="h-300 mt-10 sm:flex sm:align-middle sm:justify-center sm:flex-col">
+        <div className="lg:col-start-2 
+                        md:pl-8 md:mt-8 
+                        flex justify-center flex-col">
+
+          {/** MAIN TITLE */}
+          <h1 className="text-5xl tracking-tighter text-center md:text-left">Yellow-Website</h1>
+
+          {/** TEXT BODY */}
+          <div className="h-300 mt-10 flex align-middle justify-center">
             <div>
               <h2 className="leading-loose">Hi,</h2>
               <h2 className="leading-loose font-thin">I am a web designer</h2>
