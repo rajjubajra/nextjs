@@ -27,11 +27,11 @@ const links = [
 
 function PageLinks() {
   return (
-    <div className="w-2/5 mt-8">
-      <div className="grid grid-cols-2 grid-rows-2 gap-2">
+    <div className="md:w-2/5 sm:w-3/5 mt-8">
+      <div className="grid grid-cols-2 grid-rows-2  gap-2">
         {
           links.map(item => {
-            return <div className="text-center border p-2 font-thin">
+            return <div key={item.id} className="text-center border p-2 font-thin">
               <Link href={item.link}>{item.name}</Link></div>
           })
         }

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import YellowWebsite from './yellowWebsite01/index';
-import Image from 'next/image'
+import CopyRightFooter from '../components/CopyRightFooter.js/CopyRightFooter';
 
 
 export default function Home() {
@@ -12,27 +12,12 @@ export default function Home() {
       </Head>
 
 
-
       <YellowWebsite />
 
 
+      {/** copyright */}
+      <CopyRightFooter />
 
-
-      <footer className="py-10">
-        <a
-          href="https://yellow-website.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex"
-        >
-          Powered by{' '}
-          <Image
-            src="/yellow-website-square.svg"
-            alt="yellow-website Logo"
-            width={80}
-            height={80} />
-        </a>
-      </footer>
     </div>
   )
 }
