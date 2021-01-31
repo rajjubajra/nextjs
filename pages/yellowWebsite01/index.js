@@ -17,16 +17,19 @@ function YellowWebsite() {
 
   return (
     <>
-      <div className="h-screen flex flex-col justify-center  items-center">
+
+      <div className="min-h-screen flex flex-col justify-center  items-center">
+
         <PageContent />
         <PageLinks />
+
       </div>
 
 
 
       {/** boundinc arrow down */}
       <div className={`${inView && 'hidden'}`}>
-        <div className="flex justify-center -mt-12">
+        <div className="hidden md:flex justify-center -mt-12">
           <BounceArrow />
         </div>
       </div>
