@@ -1,11 +1,11 @@
 {
   "name": "nextjs",
-  "homepage": "http://localhost:8888",
+  "homepage": "https://yellow-website.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build  && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
