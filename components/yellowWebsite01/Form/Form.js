@@ -4,7 +4,7 @@ import Textarea from './Textarea'
 
 function Form() {
   return (
-    <div>
+    <div className="min-h-screen mx-auto">
       <form className="px-4 mx-auto max-w-3xl w-full my-32 inputs space-y-6">
         <div>
           <h5 className="text-2xl font-thin">Please send your enquiry</h5>

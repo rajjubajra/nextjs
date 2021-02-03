@@ -19,7 +19,7 @@ function PageContent() {
                         flex justify-center flex-col">
 
           {/** MAIN TITLE */}
-          <h1 className="text-5xl tracking-tighter text-center md:text-left">Yellow-Website</h1>
+          <h1 className="text-4xl md:text-5xl tracking-tighter text-center md:text-left">Yellow-Website</h1>
 
           {/** TEXT BODY */}
           <div className="h-300 mt-10 flex align-middle justify-center">

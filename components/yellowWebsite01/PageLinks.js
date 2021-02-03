@@ -5,7 +5,7 @@ const links = [
   {
     id: "1",
     name: "Themes",
-    link: "/themes"
+    link: "/themelist"
   },
   {
     id: "2",
@@ -28,11 +28,12 @@ const links = [
 function PageLinks() {
   return (
     <div className="w-5/6 lg:w-1/3 md:w-2/5 mt-8">
-      <div className="grid grid-cols-2 grid-rows-2  gap-2">
+      <div className="grid md:grid-cols-2 md:grid-rows-2  gap-2">
         {
           links.map(item => {
             return <div key={item.id} className="text-center border p-2 font-thin">
-              <Link href={item.link}>{item.name}</Link></div>
+              <Link href={item.link}>{item.name}</Link>
+            </div>
           })
         }
       </div>
