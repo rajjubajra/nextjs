@@ -6,7 +6,7 @@ function Card({ item }) {
       <h3>{item.title}</h3>
       <p>{item.description}</p>
       <span>
-        <Link href={item.link}><a>Veiw</a></Link>
+        <Link href={item.link}><a target="_blank">Veiw</a></Link>
       </span>
     </div>
   )

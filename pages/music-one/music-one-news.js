@@ -1,7 +1,7 @@
 import Layout from '../../components/MusicOne/Layout'
 
 
-function MusicOneTour({ newsdata }) {
+function MusicOneTour() {
   return (
     <Layout>
       <div>

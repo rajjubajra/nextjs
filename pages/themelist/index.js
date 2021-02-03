@@ -1,4 +1,5 @@
-import Card from './Card';
+import Card from '../../components/ThemeList/Card';
+import Layout from '../../components/yellowWebsite01/Layout';
 
 const themeList = [
   {
@@ -6,7 +7,7 @@ const themeList = [
     "title": "Theme One",
     "description": "Business Theme - 1",
     "image": "-",
-    "link": "/"
+    "link": "/music-one"
   },
   {
     "id": "2",
@@ -34,20 +35,22 @@ const themeList = [
 
 function Index() {
   return (
-    <div className="container mx-auto">
-      <div>
-        <h2 className="w-full text-center mt-8">Theme List</h2>
-      </div>
-      <div className="mt-10">
-        <div className="grid grid-cols-2 gap-4">
-          {
-            themeList.map(item => {
-              return <Card key={item.title} item={item} />
-            })
-          }
+    <Layout>
+      <div className="container mx-auto">
+        <div>
+          <h2 className="w-full text-center mt-8">Theme List</h2>
+        </div>
+        <div className="mt-10">
+          <div className="grid grid-cols-2 gap-4">
+            {
+              themeList.map((item, index) => {
+                return <Card key={index} item={item} />
+              })
+            }
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 

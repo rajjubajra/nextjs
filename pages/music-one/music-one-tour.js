@@ -14,8 +14,8 @@ function MusicOneTour({ tourdata }) {
       </div>
       <div className="container px-10">
         {tourdata &&
-          tourdata.map(item => (
-            <div className="flex flex-col border mb-5 lg:m-10 lg:flex-row">
+          tourdata.map((item, index) => (
+            <div key={index} className="flex flex-col border mb-5 lg:m-10 lg:flex-row">
 
               <div className="w-full p-3 lg:w-1/4">
                 {item.date}

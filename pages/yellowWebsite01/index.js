@@ -3,6 +3,7 @@ import PageContent from '../../components/yellowWebsite01/PageContent'
 import PageLinks from '../../components/yellowWebsite01/PageLinks'
 import From from '../../components/yellowWebsite01/Form/Form'
 import { useInView } from 'react-intersection-observer'
+import Layout from '../../components/yellowWebsite01/Layout'
 
 
 
@@ -16,7 +17,7 @@ function YellowWebsite() {
   console.log(inView);
 
   return (
-    <>
+    <Layout>
 
       <div className="min-h-screen flex flex-col justify-center  items-center">
 
@@ -40,9 +41,7 @@ function YellowWebsite() {
         <From />
       </div>
 
-
-
-    </>
+    </Layout>
   )
 }
 

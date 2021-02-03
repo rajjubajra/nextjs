@@ -1,4 +1,4 @@
-export const tourdata = [
+export const newsdata = [
   {
     "id": "1",
     "date": "1 Feb, 2021",
