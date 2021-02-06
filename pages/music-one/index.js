@@ -55,8 +55,8 @@ function index() {
       {/** LATEST NEWS  */}
       <div className="w-full p-20">
         {
-          text.map(item => (
-            <div className="my-20">
+          text.map((item, index) => (
+            <div key={index} className="my-20">
               <Paragraph
                 date={item.date}
                 title={item.title}
