@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/rdbamtun/nextjs
+    - /bin/cp -R * $DEPLOYPATH
