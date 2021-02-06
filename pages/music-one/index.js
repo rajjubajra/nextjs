@@ -1,5 +1,4 @@
 import MusicOneTitle from '../../components/MusicOne/Music-one-title';
-import Navbar from '../../components/MusicOne/Navbar';
 import MusicOneTitleImage from '../../components/MusicOne/Music-one-title-image';
 import ViewButton from '../../components/MusicOne/View-Button';
 import Paragraph from '../../components/MusicOne/Paragraph';
