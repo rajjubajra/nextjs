@@ -1,12 +1,14 @@
 import Layout from '../../../../components/MusicOne/Layout';
 import { useRouter } from 'next/router';
 import ViewButton from '../../../../components/MusicOne/View-Button';
+import { server } from '../../../../config'
 
 
 function index({ tourDetail }) {
 
   const router = useRouter();
   const { id } = router.query;
+  console.log("router ? ", id)
 
   return (
     <Layout>
@@ -43,7 +45,7 @@ function index({ tourDetail }) {
 }
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`http://localhost:3000/api/music-one/tour/${context.params.id}`)
+  const res = await fetch(`${server}/api/music-one/tour/${context.params.id}`)
 
   const tourDetail = await res.json()
 
@@ -55,7 +57,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/music-one/tour/`)
+  const res = await fetch(`${server}/api/music-one/tour/`)
 
   const tourDetails = await res.json()
 

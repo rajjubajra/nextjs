@@ -1,5 +1,6 @@
 import Layout from '../../components/MusicOne/Layout';
 import Link from 'next/link';
+import { server } from '../../config'
 
 
 
@@ -44,7 +45,7 @@ function MusicOneTour({ tourdata }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/music-one/tour`)
+  const res = await fetch(`${server}/api/music-one/tour`)
   const tourdata = await res.json()
 
   return {
