@@ -1,4 +1,4 @@
-import { tourdata } from '../../../../components/MusicOne/tour-data';
+import tourdata from '../../../../components/MusicOne/data/tourdata';
 
 export default async (req, res) => {
 

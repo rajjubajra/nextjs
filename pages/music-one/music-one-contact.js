@@ -1,13 +1,10 @@
 import Layout from '../../components/MusicOne/Layout';
+import Form from '../../components/MusicOne/Form/Form'
 
 function MusicOneTour() {
   return (
     <Layout>
-      <div>
-
-        music one Contact
-      </div>
-
+      <Form />
     </Layout>
 
   )

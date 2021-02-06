@@ -31,7 +31,8 @@ module.exports = {
         'body': '#b5b4b4',
         'button': '#444444',
         'border-standard': '#888888'
-      }
+      },
+
     },
   },
   variants: {

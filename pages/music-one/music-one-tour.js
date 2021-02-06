@@ -7,6 +7,7 @@ import { server } from '../../config'
 function MusicOneTour({ tourdata }) {
 
 
+  console.log("tourdata", tourdata);
 
   return (
     <Layout title="Yellow-website - Tour">
@@ -14,7 +15,7 @@ function MusicOneTour({ tourdata }) {
         <h2>Tour Programme</h2>
       </div>
       <div className="container px-10">
-        {tourdata &&
+        {tourdata.length > 0 &&
           tourdata.map((item, index) => (
             <div key={index} className="flex flex-col border mb-5 lg:m-10 lg:flex-row">
 
@@ -30,7 +31,7 @@ function MusicOneTour({ tourdata }) {
 
               <div className="w-full lg:w-1/4 flex border-t lg:border-t-0">
                 <div className="w-1/2 p-3 border-r">
-                  <Link href='/music-one/music-one-tour/[id]' as={`/music-one/music-one-tour/${item.id}`}><a>Detail</a></Link>
+                  <Link href='/music-one/tour/[id]' as={`/music-one/tour/${item.id}`}><a>Detail</a></Link>
                 </div>
                 <div className="w-1/2 p-3">
                   <Link href="#"><a>Buy Ticket</a></Link>
