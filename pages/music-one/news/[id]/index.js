@@ -33,7 +33,6 @@ function index({ newsDetail }) {
         </div>
 
       </div>
-
     </Layout>
   )
 }
